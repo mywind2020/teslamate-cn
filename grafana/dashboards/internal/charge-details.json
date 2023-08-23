@@ -24,9 +24,21 @@
   "iteration": 1656106965302,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -110,7 +122,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Charging Voltage"
+                "value": "充电电压"
               },
               {
                 "id": "unit",
@@ -146,7 +158,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Power"
+                "value": "电量"
               },
               {
                 "id": "unit",
@@ -166,7 +178,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Battery heater"
+                "value": "电池加热"
               },
               {
                 "id": "unit",
@@ -218,7 +230,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range"
+                "value": "里程"
               }
             ]
           },
@@ -230,7 +242,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Current"
+                "value": "电流"
               },
               {
                 "id": "unit",
@@ -250,7 +262,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Current (pilot)"
+                "value": "电流 (pilot)"
               },
               {
                 "id": "unit",
@@ -302,7 +314,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Outdoor Temperature"
+                "value": "车外温度"
               }
             ]
           },
@@ -378,7 +390,7 @@
           ]
         }
       ],
-      "title": "Charge Details",
+      "title": "充电详情",
       "type": "timeseries"
     },
     {
@@ -386,7 +398,7 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 1,
-          "displayName": "Added",
+          "displayName": "充电量",
           "mappings": [
             {
               "options": {
@@ -441,7 +453,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "select coalesce(cp.charge_energy_added, c.charge_energy_added)\r\nfrom charging_processes cp\r\njoin charges c\r\n\ton cp.id = c.charging_process_id\r\nwhere car_id = $car_id\r\nAND cp.id = $charging_process_id\r\nORDER BY c.date desc\r\nfetch first row only",
+          "rawSql": "SELECT\n\tsum(charge_energy_added)\nFROM\n\tcharging_processes\nWHERE\n\t$__timeFilter(start_date)\n\tAND car_id = $car_id;\n",
           "refId": "A",
           "select": [
             [
@@ -472,7 +484,7 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 2,
-          "displayName": "Cost",
+          "displayName": "费用",
           "mappings": [
             {
               "options": {
@@ -533,7 +545,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT cost from charging_processes where id = $charging_process_id;",
+          "rawSql": "select sum(cost) as \"Cost\" from charging_processes where $__timeFilter(start_date) AND car_id = $car_id;",
           "refId": "A",
           "select": [
             [
@@ -916,7 +928,7 @@
           ]
         }
       ],
-      "title": "Charging curve",
+      "title": "充电曲线",
       "type": "natel-plotly-panel",
       "version": 1
     }
@@ -1096,7 +1108,7 @@
     ]
   },
   "timezone": "",
-  "title": "Charge Details",
+  "title": "充电详情",
   "uid": "BHhxFeZRz",
   "version": 1,
   "weekStart": ""

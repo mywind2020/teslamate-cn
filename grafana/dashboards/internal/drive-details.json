@@ -25,12 +25,24 @@
   "iteration": 1658136653681,
   "links": [
     {
-      "icon": "dashboard",
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
       "tags": [],
-      "title": "TeslaMate",
+      "targetBlank": true,
+      "title": "中文文档",
       "tooltip": "",
       "type": "link",
-      "url": "[[base_url:raw]]"
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
+      "icon": "dashboard",
+      "tags": [],
+      "title": "控制台",
+      "tooltip": "",
+      "type": "link",
+      "url": "[[base_url:raw]]/?locale=zh_Hans"
     },
     {
       "icon": "",
@@ -177,7 +189,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Speed"
+                "value": "速度"
               }
             ]
           },
@@ -197,7 +209,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Power"
+                "value": "电量"
               }
             ]
           },
@@ -209,7 +221,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Battery heater"
+                "value": "电池加热"
               },
               {
                 "id": "unit",
@@ -229,7 +241,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range (ideal)"
+                "value": "里程 (额定)"
               },
               {
                 "id": "min",
@@ -245,7 +257,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range (rated)"
+                "value": "里程 (典型)"
               },
               {
                 "id": "min",
@@ -281,7 +293,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "usable SOC"
+                "value": "可用 SOC"
               },
               {
                 "id": "unit",
@@ -301,7 +313,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range (est.)"
+                "value": "里程 (预估)"
               },
               {
                 "id": "custom.axisPlacement",
@@ -368,7 +380,7 @@
           ]
         }
       ],
-      "title": "Drive",
+      "title": "行程",
       "type": "timeseries"
     },
     {
@@ -377,7 +389,7 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 2,
-          "displayName": "Distance",
+          "displayName": "距离",
           "mappings": [
             {
               "options": {
@@ -489,7 +501,7 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 1,
-          "displayName": "Duration",
+          "displayName": "持续时间",
           "mappings": [
             {
               "options": {
@@ -575,7 +587,7 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 2,
-          "displayName": "Energy used",
+          "displayName": "使用能量",
           "mappings": [
             {
               "options": {
@@ -923,7 +935,7 @@
           ]
         }
       ],
-      "title": "Map",
+      "title": "地图",
       "type": "pr0ps-trackmap-panel"
     },
     {
@@ -994,7 +1006,7 @@
               },
               {
                 "id": "displayName",
-                "value": "front left"
+                "value": "左前"
               }
             ]
           },
@@ -1010,7 +1022,7 @@
               },
               {
                 "id": "displayName",
-                "value": "front right"
+                "value": "右前"
               }
             ]
           },
@@ -1026,7 +1038,7 @@
               },
               {
                 "id": "displayName",
-                "value": "rear left"
+                "value": "左后"
               }
             ]
           },
@@ -1042,7 +1054,7 @@
               },
               {
                 "id": "displayName",
-                "value": "rear right"
+                "value": "右后"
               }
             ]
           },
@@ -1058,7 +1070,7 @@
               },
               {
                 "id": "displayName",
-                "value": "front left"
+                "value": "左前"
               }
             ]
           },
@@ -1074,7 +1086,7 @@
               },
               {
                 "id": "displayName",
-                "value": "front right"
+                "value": "右前"
               }
             ]
           },
@@ -1090,7 +1102,7 @@
               },
               {
                 "id": "displayName",
-                "value": "rear left"
+                "value": "左后"
               }
             ]
           },
@@ -1106,7 +1118,7 @@
               },
               {
                 "id": "displayName",
-                "value": "rear right"
+                "value": "右后"
               }
             ]
           }
@@ -1168,7 +1180,7 @@
           ]
         }
       ],
-      "title": "Tire Pressure",
+      "title": "胎压",
       "type": "timeseries"
     },
     {
@@ -1257,7 +1269,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Elevation"
+                "value": "海拔"
               },
               {
                 "id": "color",
@@ -1320,7 +1332,7 @@
           ]
         }
       ],
-      "title": "Elevation",
+      "title": "海拔",
       "type": "timeseries"
     },
     {
@@ -1445,7 +1457,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Outside Temperature"
+                "value": "车外温度"
               }
             ]
           },
@@ -1464,7 +1476,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Inside Temperature"
+                "value": "车内温度"
               }
             ]
           },
@@ -1476,7 +1488,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Driver Temperature"
+                "value": "驾驶舱温度"
               }
             ]
           },
@@ -1488,7 +1500,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Passenger Temperature"
+                "value": "后排温度"
               }
             ]
           },
@@ -1508,7 +1520,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Climate"
+                "value": "空调开/关"
               }
             ]
           },
@@ -1520,7 +1532,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Fan status"
+                "value": "风扇状态"
               },
               {
                 "id": "custom.axisPlacement",
@@ -1580,7 +1592,7 @@
           ]
         }
       ],
-      "title": "Temperatures",
+      "title": "温度系统",
       "type": "timeseries"
     },
     {
@@ -1772,7 +1784,7 @@
           ]
         }
       ],
-      "title": "Elevation Summary",
+      "title": "海拔摘要",
       "type": "stat"
     }
   ],
@@ -1996,7 +2008,7 @@
     ]
   },
   "timezone": "",
-  "title": "Drive Details",
+  "title": "行程详情",
   "uid": "zm7wN6Zgz",
   "version": 1,
   "weekStart": ""

@@ -25,9 +25,21 @@
   "iteration": 1642770916740,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -38,7 +50,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -92,7 +104,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Date"
+                "value": "日期时间"
               },
               {
                 "id": "unit",
@@ -125,7 +137,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Consumption"
+                "value": "能耗"
               },
               {
                 "id": "unit",
@@ -148,7 +160,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Consumption"
+                "value": "能耗"
               },
               {
                 "id": "unit",
@@ -171,7 +183,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "km"
+                "value": "公里"
               },
               {
                 "id": "unit",
@@ -198,7 +210,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "kWh"
+                "value": "电量"
               },
               {
                 "id": "unit",
@@ -225,7 +237,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Start"
+                "value": "起点"
               },
               {
                 "id": "links",
@@ -254,7 +266,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Destination"
+                "value": "终点"
               },
               {
                 "id": "links",
@@ -283,7 +295,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temp"
+                "value": "温度"
               },
               {
                 "id": "unit",
@@ -310,7 +322,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Duration"
+                "value": "时长"
               },
               {
                 "id": "unit",
@@ -343,7 +355,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               },
               {
                 "id": "unit",
@@ -417,7 +429,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Speed"
+                "value": "平均速度"
               },
               {
                 "id": "unit",
@@ -494,7 +506,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temp"
+                "value": "温度"
               },
               {
                 "id": "unit",
@@ -521,7 +533,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Speed"
+                "value": "平均速度"
               },
               {
                 "id": "unit",
@@ -616,6 +628,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "起始电量%"
+              },
+              {
                 "id": "unit",
                 "value": "percent"
               },
@@ -638,6 +654,10 @@
               "options": "% End"
             },
             "properties": [
+              {
+                "id": "displayName",
+                "value": "到达电量%"
+              },
               {
                 "id": "unit",
                 "value": "percent"
@@ -739,7 +759,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "max Power"
+                "value": "最大功耗"
               },
               {
                 "id": "unit",
@@ -806,7 +826,7 @@
         }
       ],
       "datasource": "TeslaMate",
-      "title": "Drive",
+      "title": "行程",
       "transformations": [
         {
           "id": "merge",
@@ -953,7 +973,7 @@
         },
         "hide": 0,
         "includeAll": false,
-        "label": "Enter min distance here",
+        "label": "请输入最小距离",
         "name": "min_dist",
         "options": [],
         "query": "0",
@@ -968,7 +988,7 @@
         },
         "hide": 0,
         "includeAll": false,
-        "label": "Enter min speed here",
+        "label": "请输入最慢速度",
         "name": "min_speed",
         "options": [],
         "query": "0",
@@ -1007,7 +1027,7 @@
     ]
   },
   "timezone": "",
-  "title": "Drives",
+  "title": "行程",
   "uid": "Y8upc6ZRk",
   "version": 1,
   "weekStart": ""

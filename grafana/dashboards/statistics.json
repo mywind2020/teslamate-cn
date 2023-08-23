@@ -24,11 +24,23 @@
   "iteration": 1642773094879,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "type": "link",
-      "url": "[[base_url:raw]]"
+      "url": "[[base_url:raw]]/"
     },
     {
       "asDropdown": true,
@@ -36,7 +48,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -102,6 +114,10 @@
               {
                 "id": "decimals",
                 "value": 1
+              },
+              {
+                "id": "displayName",
+                "value": "已驾驶时间"
               }
             ]
           },
@@ -120,10 +136,14 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "Trip",
+                    "title": "行程",
                     "url": "d/FkUpJpQZk/trip?orgId=1&from=${__data.fields.date_from}&to=${__data.fields.date_to}&var-car_id=$car_id"
                   }
                 ]
+              },
+              {
+                "id": "displayName",
+                "value": "时间段"
               }
             ]
           },
@@ -160,6 +180,10 @@
                     }
                   ]
                 }
+              },
+              {
+                "id": "displayName",
+                "value": "能效"
               }
             ]
           },
@@ -186,6 +210,10 @@
               {
                 "id": "unit",
                 "value": "kwatth"
+              },
+              {
+                "id": "displayName",
+                "value": "总充电量"
               }
             ]
           },
@@ -202,6 +230,10 @@
               {
                 "id": "decimals",
                 "value": 1
+              },
+              {
+                "id": "displayName",
+                "value": "平均每次充电"
               }
             ]
           },
@@ -214,6 +246,10 @@
               {
                 "id": "decimals",
                 "value": 2
+              },
+              {
+                "id": "displayName",
+                "value": "费用"
               }
             ]
           },
@@ -228,10 +264,14 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "Charges",
+                    "title": "充电费用报表",
                     "url": "d/TSmNYvRRk/charges?orgId=1&from=${__data.fields.date_from}&to=${__data.fields.date_to}&var-car_id=$car_id"
                   }
                 ]
+              },
+              {
+                "id": "displayName",
+                "value": "充电次数"
               }
             ]
           },
@@ -246,10 +286,14 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "Drives",
+                    "title": "行程",
                     "url": "d/Y8upc6ZRk/drives?orgId=1&from=${__data.fields.date_from}&to=${__data.fields.date_to}&var-car_id=$car_id"
                   }
                 ]
+              },
+              {
+                "id": "displayName",
+                "value": "行驶次数"
               }
             ]
           },
@@ -265,7 +309,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Distance"
+                "value": "距离"
               }
             ]
           },
@@ -281,7 +325,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "custom.displayMode",
@@ -317,7 +361,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Distance"
+                "value": "距离"
               },
               {
                 "id": "unit",
@@ -333,7 +377,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Avg consumption (drives)"
+                "value": "平均能耗 (按行程)"
               },
               {
                 "id": "unit",
@@ -352,7 +396,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Avg consumption (charges)"
+                "value": "平均能耗 (按充电)"
               },
               {
                 "id": "unit",
@@ -375,6 +419,10 @@
               },
               {
                 "id": "custom.width"
+              },
+              {
+                "id": "displayName",
+                "value": "起始时间"
               }
             ]
           },
@@ -386,7 +434,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Avg consumption (drives)"
+                "value": "平均能耗 (按行程)"
               },
               {
                 "id": "unit",
@@ -405,7 +453,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Avg consumption (charges)"
+                "value": "平均能耗 (按充电)"
               },
               {
                 "id": "unit",
@@ -424,7 +472,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "unit",
@@ -479,7 +527,7 @@
         "sortBy": [
           {
             "desc": true,
-            "displayName": "Starting at"
+            "displayName": "起始时间"
           }
         ]
       },
@@ -845,8 +893,8 @@
       {
         "current": {
           "selected": false,
-          "text": "Europe/Berlin",
-          "value": "Europe/Berlin"
+          "text": "Asia/Shanghai",
+          "value": "Asia/Shanghai"
         },
         "datasource": "TeslaMate",
         "definition": "select current_setting('TIMEZONE'), name from pg_timezone_names where abbrev ~ '^[a-zA-Z]{3,4}$' and name not like 'posix%' order by 2;",
@@ -910,7 +958,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "Statistics",
+  "title": "统计数据",
   "uid": "1EZnXszMk",
   "version": 1,
   "weekStart": ""

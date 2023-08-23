@@ -24,9 +24,21 @@
   "iteration": 1656100778202,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -37,7 +49,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -143,7 +155,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Mileage"
+                "value": "里程"
               }
             ]
           }
@@ -203,7 +215,7 @@
           ]
         }
       ],
-      "title": "Mileage",
+      "title": "里程",
       "type": "timeseries"
     }
   ],
@@ -319,7 +331,7 @@
     ]
   },
   "timezone": "",
-  "title": "Mileage",
+  "title": "里程",
   "uid": "NjtMTFggz",
   "version": 1,
   "weekStart": ""

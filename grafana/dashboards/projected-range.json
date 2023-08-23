@@ -30,9 +30,21 @@
   "iteration": 1598013680918,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -43,7 +55,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -193,7 +205,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Projected Range - Mileage",
+      "title": "预估续航里程 - 里程表",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -211,7 +223,7 @@
         {
           "decimals": 0,
           "format": "none",
-          "label": "Projected Range",
+          "label": "预估续航里程",
           "logBase": 1,
           "max": null,
           "min": "200",
@@ -220,7 +232,7 @@
         {
           "decimals": null,
           "format": "none",
-          "label": "Mileage",
+          "label": "总里程",
           "logBase": 1,
           "max": null,
           "min": null,
@@ -355,7 +367,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Projected Range - Battery Level",
+      "title": "预估续航里程 - 电池余量",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -373,7 +385,7 @@
         {
           "decimals": 0,
           "format": "none",
-          "label": "Projected Range",
+          "label": "预估续航里程",
           "logBase": 1,
           "max": null,
           "min": "200",
@@ -382,7 +394,7 @@
         {
           "decimals": null,
           "format": "none",
-          "label": "Battery Level",
+          "label": "电池余量",
           "logBase": 1,
           "max": "100",
           "min": null,
@@ -525,7 +537,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Projected Range - Outdoor Temp",
+      "title": "预估续航里程 - 室外温度",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -543,7 +555,7 @@
         {
           "decimals": 0,
           "format": "none",
-          "label": "Projected Range",
+          "label": "预估续航里程",
           "logBase": 1,
           "max": null,
           "min": "200",
@@ -552,7 +564,7 @@
         {
           "decimals": null,
           "format": "none",
-          "label": "Temp",
+          "label": "温度",
           "logBase": 1,
           "max": null,
           "min": null,
@@ -784,7 +796,7 @@
     ]
   },
   "timezone": "",
-  "title": "Projected Range",
+  "title": "预估续航里程",
   "uid": "riqUfXgRz",
   "version": 1
 }

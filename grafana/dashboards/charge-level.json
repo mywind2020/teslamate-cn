@@ -24,9 +24,21 @@
   "iteration": 1656100496202,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -37,7 +49,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -66,7 +78,7 @@
             "mode": "palette-classic"
           },
           "custom": {
-            "axisLabel": "Charge Level",
+            "axisLabel": "能量百分比",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
@@ -174,7 +186,7 @@
           ]
         }
       ],
-      "title": "Charge Level",
+      "title": "能量折线图",
       "type": "timeseries"
     }
   ],
@@ -266,7 +278,7 @@
     ]
   },
   "timezone": "",
-  "title": "Charge Level",
+  "title": "能量折线图",
   "uid": "WopVO_mgz",
   "version": 1,
   "weekStart": ""

@@ -18,9 +18,21 @@
   "iteration": 1644505954964,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -31,7 +43,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -148,7 +160,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Number of drives",
+      "title": "行程总数",
       "type": "stat"
     },
     {
@@ -266,7 +278,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "$length_unit driven",
+      "title": "总里程 $length_unit ",
       "type": "stat"
     },
     {
@@ -359,7 +371,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "kWh used",
+      "title": "总能耗",
       "type": "stat"
     },
     {
@@ -485,7 +497,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Median distance of a drive",
+      "title": "平均每段行驶里程",
       "type": "stat"
     },
     {
@@ -603,7 +615,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Median distance driven per day",
+      "title": "平均每天行驶里程",
       "type": "stat"
     },
     {
@@ -696,7 +708,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Median kWh used per day",
+      "title": "平均每天能耗",
       "type": "stat"
     },
     {
@@ -814,7 +826,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Extrapolated monthly mileage",
+      "title": "每月行驶里程估算",
       "type": "stat"
     },
     {
@@ -932,7 +944,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Extrapolated annual mileage",
+      "title": "每年行驶里程估算",
       "type": "stat"
     },
     {
@@ -1023,7 +1035,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Top Destinations",
+      "title": "常用目的地",
       "type": "bargauge"
     }
   ],
@@ -1198,7 +1210,7 @@
     ]
   },
   "timezone": "",
-  "title": "Drive Stats",
+  "title": "行程统计",
   "uid": "_7WkNSyWk",
   "version": 1
 }

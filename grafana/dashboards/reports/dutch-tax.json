@@ -19,9 +19,41 @@
   "iteration": 1602596446244,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
+      "tooltip": "",
+      "type": "link",
+      "url": "[[base_url:raw]]"
+    },
+    {
+      "icon": "dashboard",
+      "tags": [],
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -139,7 +171,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Start Time"
+                "value": "出发时间"
               }
             ]
           },
@@ -155,7 +187,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Start Odometer"
+                "value": "出发前里程表读数"
               }
             ]
           },
@@ -183,7 +215,7 @@
               },
               {
                 "id": "displayName",
-                "value": "End Odometer"
+                "value": "到达后里程表读数"
               }
             ]
           },
@@ -195,7 +227,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "End Time"
+                "value": "到达时间"
               }
             ]
           },
@@ -222,7 +254,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Duration"
+                "value": "持续时间"
               },
               {
                 "id": "custom.width",
@@ -242,7 +274,7 @@
               },
               {
                 "id": "displayName",
-                "value": "km"
+                "value": "距离"
               }
             ]
           },
@@ -270,7 +302,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Start Address"
+                "value": "出发地址"
               }
             ]
           },
@@ -282,7 +314,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "End Address"
+                "value": "到达地址"
               }
             ]
           }
@@ -343,7 +375,7 @@
           ]
         }
       ],
-      "title": "Drive",
+      "title": "行程报表",
       "type": "table"
     }
   ],
@@ -503,7 +535,7 @@
     "time_options": ["5m", "15m", "1h", "6h", "12h", "24h", "2d", "7d", "30d"]
   },
   "timezone": "",
-  "title": "Drives - Dutch tax",
+  "title": "行程报表",
   "uid": "lBIoQIggk",
   "version": 1
 }
