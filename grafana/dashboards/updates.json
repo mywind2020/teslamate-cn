@@ -25,12 +25,24 @@
   "iteration": 1643273221821,
   "links": [
     {
-      "icon": "dashboard",
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
       "tags": [],
-      "title": "TeslaMate",
+      "targetBlank": true,
+      "title": "中文文档",
       "tooltip": "",
       "type": "link",
-      "url": "[[base_url:raw]]"
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
+      "icon": "dashboard",
+      "tags": [],
+      "title": "控制台",
+      "tooltip": "",
+      "type": "link",
+      "url": "[[base_url:raw]]/"
     },
     {
       "asDropdown": true,
@@ -38,7 +50,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -127,7 +139,7 @@
           ]
         }
       ],
-      "title": "Updates",
+      "title": "系统更新",
       "type": "stat"
     },
     {
@@ -240,7 +252,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Date"
+                "value": "日期时间"
               },
               {
                 "id": "unit",
@@ -260,7 +272,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Duration"
+                "value": "持续时间"
               },
               {
                 "id": "unit",
@@ -280,7 +292,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Since Previous Update"
+                "value": "距前一次更新"
               },
               {
                 "id": "unit",
@@ -296,7 +308,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Installed Version"
+                "value": "已安装的版本"
               },
               {
                 "id": "custom.align",
@@ -334,7 +346,7 @@
               },
               {
                 "id": "displayName",
-                "value": "# of Charges"
+                "value": "充电次数"
               }
             ]
           },
@@ -358,7 +370,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Avg ideal range"
+                "value": "平均额定续航里程"
               }
             ]
           },
@@ -382,7 +394,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Avg rated range"
+                "value": "平均典型续航里程"
               }
             ]
           },
@@ -406,7 +418,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Avg ideal range"
+                "value": "平均额定续航里程"
               }
             ]
           },
@@ -430,7 +442,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Avg rated range"
+                "value": "平均典型续航里程"
               }
             ]
           }
@@ -456,7 +468,7 @@
         "sortBy": [
           {
             "desc": true,
-            "displayName": "Date"
+            "displayName": "日期时间"
           }
         ]
       },
@@ -596,7 +608,7 @@
         }
       ],
       "datasource": "TeslaMate",
-      "title": "Updates",
+      "title": "系统更新",
       "type": "table"
     }
   ],
@@ -732,7 +744,7 @@
     ]
   },
   "timezone": "",
-  "title": "Updates",
+  "title": "系统更新",
   "uid": "IiC07mgWz",
   "version": 1,
   "weekStart": ""

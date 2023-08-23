@@ -18,9 +18,21 @@
   "iteration": 1598013087999,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -31,7 +43,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -174,7 +186,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Consumption (net)",
+      "title": "能耗 (净)",
       "type": "stat"
     },
     {
@@ -293,7 +305,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Consumption (gross) ",
+      "title": "能耗 (总)",
       "type": "stat"
     },
     {
@@ -412,7 +424,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Logged Distance",
+      "title": "记录的距离",
       "type": "stat"
     },
     {
@@ -445,7 +457,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "unit",
@@ -465,7 +477,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "unit",
@@ -485,7 +497,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               },
               {
                 "id": "unit",
@@ -533,7 +545,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Consumption"
+                "value": "能耗"
               },
               {
                 "id": "unit",
@@ -553,7 +565,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Consumption"
+                "value": "能耗"
               },
               {
                 "id": "unit",
@@ -573,7 +585,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "$length_unit"
+                "value": "距离（公里）"
               },
               {
                 "id": "unit",
@@ -593,7 +605,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "$length_unit"
+                "value": "距离（英里）"
               },
               {
                 "id": "unit",
@@ -613,7 +625,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Speed"
+                "value": "平均速度"
               },
               {
                 "id": "unit",
@@ -633,7 +645,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Speed"
+                "value": "平均速度"
               },
               {
                 "id": "unit",
@@ -704,7 +716,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Temperature – Efficiency",
+      "title": "温度 – 能效",
       "type": "table"
     },
     {
@@ -823,7 +835,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Current $preferred_range efficiency",
+      "title": "当前 $preferred_range 能效",
       "type": "stat"
     },
     {
@@ -854,7 +866,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               },
               {
                 "id": "unit",
@@ -870,7 +882,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               },
               {
                 "id": "unit",
@@ -965,7 +977,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               }
             ]
           },
@@ -977,7 +989,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Efficiency"
+                "value": "能效"
               },
               {
                 "id": "unit",
@@ -1255,7 +1267,7 @@
     ]
   },
   "timezone": "",
-  "title": "Efficiency",
+  "title": "能效",
   "uid": "fu4SiQgWz",
   "version": 1
 }

@@ -24,9 +24,21 @@
   "iteration": 1642779900099,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -37,7 +49,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -92,7 +104,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Start"
+                "value": "起始时间"
               },
               {
                 "id": "unit",
@@ -125,7 +137,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "End"
+                "value": "结束时间"
               },
               {
                 "id": "unit",
@@ -148,7 +160,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss"
+                "value": "续航损失"
               },
               {
                 "id": "unit",
@@ -175,7 +187,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Period"
+                "value": "历时"
               },
               {
                 "id": "unit",
@@ -211,6 +223,10 @@
               {
                 "id": "custom.minWidth",
                 "value": 100
+              },
+              {
+                "id": "custom.width",
+                "value": 120
               }
             ]
           },
@@ -222,7 +238,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss / h"
+                "value": "每小时续航损失"
               },
               {
                 "id": "unit",
@@ -237,7 +253,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 90
+                "value": 120
               }
             ]
           },
@@ -272,7 +288,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Standby"
+                "value": "待机"
               },
               {
                 "id": "unit",
@@ -323,7 +339,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "kWh"
+                "value": "电量"
               },
               {
                 "id": "unit",
@@ -350,7 +366,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Ø-Power"
+                "value": "平均损失功率"
               },
               {
                 "id": "unit",
@@ -365,7 +381,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 80
+                "value": 120
               }
             ]
           },
@@ -377,7 +393,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss / h"
+                "value": "每小时续航损失"
               },
               {
                 "id": "unit",
@@ -392,7 +408,7 @@
               },
               {
                 "id": "custom.width",
-                "value": 90
+                "value": 120
               }
             ]
           },
@@ -404,7 +420,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "TR Loss"
+                "value": "续航损失"
               },
               {
                 "id": "unit",
@@ -546,7 +562,7 @@
         }
       ],
       "datasource": "TeslaMate",
-      "title": "Vampire Drain",
+      "title": "停车电量消耗",
       "transformations": [
         {
           "id": "merge",
@@ -597,7 +613,7 @@
         },
         "hide": 0,
         "includeAll": false,
-        "label": "min. Idle Time (h)",
+        "label": "最小闲置时间 (h)",
         "multi": false,
         "name": "duration",
         "options": [
@@ -744,7 +760,7 @@
     ]
   },
   "timezone": "",
-  "title": "Vampire Drain",
+  "title": "停车电量消耗",
   "uid": "zhHx2Fggk",
   "version": 1,
   "weekStart": ""

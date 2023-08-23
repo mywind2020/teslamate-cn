@@ -24,9 +24,21 @@
   "iteration": 1642771806943,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -37,7 +49,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -120,7 +132,7 @@
           ]
         }
       ],
-      "title": "Total addresses",
+      "title": "总地址数",
       "type": "stat"
     },
     {
@@ -200,7 +212,7 @@
           ]
         }
       ],
-      "title": "Cities",
+      "title": "城市",
       "type": "stat"
     },
     {
@@ -280,7 +292,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "省",
       "type": "stat"
     },
     {
@@ -360,7 +372,7 @@
           ]
         }
       ],
-      "title": "Countries",
+      "title": "国家",
       "type": "stat"
     },
     {
@@ -437,7 +449,7 @@
           ]
         }
       ],
-      "title": "Cities",
+      "title": "城市",
       "type": "bargauge"
     },
     {
@@ -516,7 +528,7 @@
           ]
         }
       ],
-      "title": "States",
+      "title": "省",
       "type": "bargauge"
     },
     {
@@ -562,6 +574,10 @@
               {
                 "id": "custom.width",
                 "value": 180
+              },
+              {
+                "id": "displayName",
+                "value": "日期时间"
               }
             ]
           },
@@ -573,6 +589,22 @@
             "properties": [
               {
                 "id": "custom.width"
+              },
+              {
+                "id": "displayName",
+                "value": "城市"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Address"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "详细地址"
               }
             ]
           }
@@ -597,7 +629,7 @@
         "sortBy": [
           {
             "desc": true,
-            "displayName": "Date"
+            "displayName": "日期时间"
           }
         ]
       },
@@ -632,7 +664,7 @@
           ]
         }
       ],
-      "title": "Last visited",
+      "title": "足迹",
       "transformations": [
         {
           "id": "organize",
@@ -703,7 +735,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Name"
+                "value": "路名"
               },
               {
                 "id": "unit",
@@ -736,7 +768,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Neighbourhood"
+                "value": "社区街道"
               },
               {
                 "id": "unit",
@@ -759,7 +791,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "City"
+                "value": "城市"
               },
               {
                 "id": "unit",
@@ -782,7 +814,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "State"
+                "value": "省"
               },
               {
                 "id": "unit",
@@ -805,7 +837,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Country"
+                "value": "国家"
               },
               {
                 "id": "unit",
@@ -886,7 +918,7 @@
           ]
         }
       ],
-      "title": "Addresses",
+      "title": "地点",
       "transformations": [
         {
           "id": "merge",
@@ -934,7 +966,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Time"
+                "value": "时间"
               },
               {
                 "id": "unit",
@@ -953,7 +985,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Name"
+                "value": "名称"
               },
               {
                 "id": "unit",
@@ -1041,7 +1073,7 @@
           ]
         }
       ],
-      "title": "Geo-fences",
+      "title": "收藏点",
       "transformations": [
         {
           "id": "merge",
@@ -1165,7 +1197,7 @@
     ]
   },
   "timezone": "",
-  "title": "Locations",
+  "title": "地点",
   "uid": "ZzhF-aRWz",
   "version": 1,
   "weekStart": ""

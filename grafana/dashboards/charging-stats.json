@@ -25,9 +25,21 @@
   "iteration": 1658137661652,
   "links": [
     {
+      "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
       "icon": "dashboard",
       "tags": [],
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -38,7 +50,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     }
   ],
@@ -136,7 +148,7 @@
           ]
         }
       ],
-      "title": "Number of Charges",
+      "title": "开始充电次数",
       "type": "stat"
     },
     {
@@ -216,7 +228,7 @@
           ]
         }
       ],
-      "title": "Charged in total",
+      "title": "累计总电量",
       "type": "stat"
     },
     {
@@ -379,7 +391,7 @@
           ]
         }
       ],
-      "title": "Total Charging Cost",
+      "title": "累计充电总费用",
       "type": "stat"
     },
     {
@@ -453,7 +465,7 @@
           ]
         }
       ],
-      "title": "Cost per 100 $length_unit",
+      "title": "每百 $length_unit 费用",
       "type": "stat"
     },
     {
@@ -519,7 +531,7 @@
           ]
         }
       ],
-      "title": "Average Cost per kWh",
+      "title": "平均每度电单价",
       "type": "stat"
     },
     {
@@ -579,7 +591,7 @@
         }
       ],
       "timeFrom": "6M",
-      "title": "Charge Heatmap",
+      "title": "充电热力图",
       "tooltip": {
         "show": true,
         "showHistogram": false
@@ -674,7 +686,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "End SOC"
+              "options": "结束 SOC"
             },
             "properties": [
               {
@@ -686,7 +698,7 @@
               },
               {
                 "id": "custom.fillBelowTo",
-                "value": "Start SOC"
+                "value": "开始 SOC"
               },
               {
                 "id": "custom.lineWidth",
@@ -747,7 +759,7 @@
         }
       ],
       "timeFrom": "6M",
-      "title": "Charge Delta",
+      "title": "充电起止",
       "type": "timeseries"
     },
     {
@@ -866,7 +878,7 @@
           ]
         }
       ],
-      "title": "AC/DC – kWh",
+      "title": "AC/DC – 电量",
       "type": "piechart"
     },
     {
@@ -970,7 +982,7 @@
         }
       ],
       "thresholds": "0,25,50,75",
-      "title": "Charging heat map by kWh",
+      "title": "充电热力地图（按电量）",
       "type": "panodata-map-panel",
       "unitPlural": "%",
       "unitSingular": "%",
@@ -1092,7 +1104,7 @@
           ]
         }
       ],
-      "title": "AC/DC – Duration",
+      "title": "AC/DC – 持续时间",
       "type": "piechart"
     },
     {
@@ -1152,7 +1164,7 @@
               "x": "SOC [%]",
               "y": "Power [kW]"
             },
-            "name": "Charge Curve",
+            "name": "充电曲线",
             "settings": {
               "color_option": "ramp",
               "line": {
@@ -1282,7 +1294,7 @@
           ]
         }
       ],
-      "title": "DC Charging Curve",
+      "title": "直流充电曲线",
       "type": "natel-plotly-panel",
       "version": 1
     },
@@ -1359,7 +1371,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "# of Charges"
+                "value": "充电次数"
               },
               {
                 "id": "custom.displayMode",
@@ -1371,6 +1383,10 @@
               {
                 "id": "min",
                 "value": 0
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
               }
             ]
           }
@@ -1424,7 +1440,7 @@
           ]
         }
       ],
-      "title": "Charge Stats",
+      "title": "开始充电统计",
       "type": "table"
     },
     {
@@ -1504,7 +1520,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "# of Discharges"
+                "value": "结束充电次数"
               },
               {
                 "id": "custom.displayMode",
@@ -1513,6 +1529,10 @@
               {
                 "id": "min",
                 "value": 0
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
               }
             ]
           }
@@ -1566,7 +1586,7 @@
           ]
         }
       ],
-      "title": "Discharge Stats",
+      "title": "结束充电统计",
       "type": "table"
     },
     {
@@ -1602,7 +1622,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Location"
+                "value": "地点"
               }
             ]
           },
@@ -1614,7 +1634,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Charged"
+                "value": "充电量"
               },
               {
                 "id": "custom.width",
@@ -1674,7 +1694,7 @@
           ]
         }
       ],
-      "title": "Top Charging Stations (Charged)",
+      "title": "充电站 (按电量)",
       "type": "table"
     },
     {
@@ -1710,7 +1730,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Location"
+                "value": "地点"
               }
             ]
           },
@@ -1722,7 +1742,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Cost"
+                "value": "费用"
               },
               {
                 "id": "custom.width",
@@ -1788,7 +1808,7 @@
           ]
         }
       ],
-      "title": "Top Charging Stations (Cost)",
+      "title": "充电站 (按费用)",
       "type": "table"
     }
   ],
@@ -1904,7 +1924,7 @@
     ]
   },
   "timezone": "",
-  "title": "Charging Stats",
+  "title": "充电统计",
   "uid": "-pkIkhmRz",
   "version": 1,
   "weekStart": ""

@@ -25,12 +25,24 @@
   "links": [
     {
       "asDropdown": false,
+      "icon": "doc",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "中文文档",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://docs.teslamate.com.cn"
+    },
+    {
+      "asDropdown": false,
       "icon": "dashboard",
       "includeVars": false,
       "keepTime": false,
       "tags": [],
       "targetBlank": false,
-      "title": "TeslaMate",
+      "title": "控制台",
       "tooltip": "",
       "type": "link",
       "url": "[[base_url:raw]]"
@@ -44,11 +56,12 @@
         "tesla"
       ],
       "targetBlank": false,
-      "title": "Dashboards",
+      "title": "仪表盘",
       "tooltip": "",
       "type": "dashboards",
       "url": ""
     }
+
   ],
   "liveNow": false,
   "panels": [
@@ -99,6 +112,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "开始时间"
+              },
+              {
                 "id": "unit",
                 "value": "dateTimeAsLocal"
               },
@@ -141,6 +158,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "SoC差"
+              },
+              {
                 "id": "custom.width",
                 "value": 70
               },
@@ -181,6 +202,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "状态"
+              },
+              {
                 "id": "custom.width",
                 "value": 100
               },
@@ -196,6 +221,10 @@
               "options": "kWh"
             },
             "properties": [
+              {
+                "id": "displayName",
+                "value": "耗电量"
+              },
               {
                 "id": "custom.width",
                 "value": 100
@@ -217,6 +246,10 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "结束时间"
+              },
+              {
                 "id": "unit",
                 "value": "dateTimeAsLocal"
               },
@@ -232,6 +265,10 @@
               "options": "Duration"
             },
             "properties": [
+              {
+                "id": "displayName",
+                "value": "持续时间"
+              },
               {
                 "id": "unit",
                 "value": "m"
@@ -249,11 +286,15 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "出发地"
+              },
+              {
                 "id": "links",
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "Create or edit geo-fence",
+                    "title": "创建或编辑收藏点",
                     "url": "[[base_url:raw]]/geo-fences/${__data.fields.start_path:raw}"
                   }
                 ]
@@ -275,11 +316,15 @@
             },
             "properties": [
               {
+                "id": "displayName",
+                "value": "目的地"
+              },
+              {
                 "id": "links",
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "Create or edit geo-fence",
+                    "title": "创建或编辑收藏点",
                     "url": "[[base_url:raw]]/geo-fences/${__data.fields.end_path:raw}"
                   }
                 ]
@@ -386,7 +431,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Odometer"
+                "value": "里程表"
               },
               {
                 "id": "custom.width",
@@ -402,7 +447,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Distance"
+                "value": "距离"
               },
               {
                 "id": "custom.width",
@@ -422,7 +467,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range Diff"
+                "value": "续航差值"
               },
               {
                 "id": "custom.width",
@@ -442,7 +487,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Temperature"
+                "value": "温度"
               },
               {
                 "id": "custom.width",
@@ -462,7 +507,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Range"
+                "value": "续航里程"
               },
               {
                 "id": "custom.width",
@@ -568,7 +613,7 @@
           ]
         }
       ],
-      "title": "Timeline",
+      "title": "时间线",
       "transformations": [
         {
           "id": "organize",
@@ -690,38 +735,38 @@
         },
         "hide": 0,
         "includeAll": true,
-        "label": "Action",
+        "label": "状态",
         "multi": true,
         "name": "action_filter",
         "options": [
           {
             "selected": true,
-            "text": "All",
+            "text": "所有",
             "value": "$__all"
           },
           {
             "selected": false,
-            "text": "🚗 Driving",
+            "text": "🚗 行驶中",
             "value": "🚗 Driving"
           },
           {
             "selected": false,
-            "text": "🔋 Charging",
+            "text": "🔋 充电中",
             "value": "🔋 Charging"
           },
           {
             "selected": false,
-            "text": "🅿️ Parking",
+            "text": "🅿️ 停车",
             "value": "🅿️ Parking"
           },
           {
             "selected": false,
-            "text": "❓ Missing",
+            "text": "❓ 丢失状态",
             "value": "❓ Missing"
           },
           {
             "selected": false,
-            "text": "💾 Updating",
+            "text": "💾 更新中",
             "value": "💾 Updating"
           }
         ],
@@ -829,7 +874,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Timeline",
+  "title": "时间线",
   "uid": "SUBgwtigz",
   "version": 1,
   "weekStart": ""
